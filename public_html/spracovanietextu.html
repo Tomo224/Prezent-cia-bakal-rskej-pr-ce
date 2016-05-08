@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Natural Language Processing</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/modern-business.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Natural Language Processing</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">Domov</a>
+                        </li>
+                        <li>
+                            <a href="cielprace.html">Ciele práce</a>
+                        </li>
+                        <li>
+                            <a href="lingvistika.html">Lingvistika</a>
+                        </li>
+                        <li>
+                            <a href="full-width.html">Spracovnie slovenského jazyka</a>
+                        </li>
+
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Spracovanie jazyka <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="spracovanietextu.html">Spracovanie textu</a>
+                                </li>
+                                <li>
+                                    <a href="full-width.html">Spracovanie hlasu</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- Page Content -->
+        <div class="container">
+
+            <!-- Page Heading/Breadcrumbs -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Spracovanie textu
+
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Domov</a>
+                        </li>
+                        <li class="active">Spracovanie textu</li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- Intro Content -->
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="http://www.researchperspectives.org/gow.ra/research_area_NaturalLanguageProcessing.png" alt="">
+                </div>
+                <div class="col-md-6">
+
+                    <p>
+                        V tejto kapitole sa budeme venovať problémami spojenými s textovým spracovaním. V podstate úlohou je konvertovať „surové“ (raw) textové súbory alebo súbor digitálnych bitov do dopredu definovaných súborov jednotiek lingvistických značiek. Spracovanie textu je nevyhnutnou súčasťou každého NLP systému, pretože znaky, slová a vety sú v tejto fáze identifikované ako základné jednotky, a sú potrebné v ďalších etapách spracovania jazyka, ako napr. pri vyhľadávaní informácií alebo 
+                        pri strojovom preklade.
+
+                    </p>
+                    <p> Spracovanie textu pozostáva z nasledujúcich krokov:</p>
+                    <ul>
+                        <li>Konverzia elektronických dokumentov na "raw" text formát</li>
+                        <li>Tokenizácia a segmentácia</li>
+                        <li>Lematizácia</li>
+                        <li>Morfologické značkovanie</li>
+                        <li>Syntaktická analýza</li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- Team Members -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Konverzia elektronických dokumentov na "raw" text formát</h2>
+                    <p>Prvý krok v spracovaní textu je získanie čistého textu informácií z daných textových dokumentov. Čistý text je sekvencia alfanumerických, interpunkčných, oddeľovacích grafických znakov a niektorých špeciálnych znakov. Alfanumerické znaky majú lexikálnu hodnotu, sú nositeľmi obsahu textu. Oddeľovacie a interpunkčné znaky (medzera, tabulátor, bodka, čiarka) sa používajú na členenie textu. K čistému textu sa dopracujeme odstránením typografických značiek a netextových informácií. Dokumenty sú k dispozícii v rôznych formátoch napr. PDF, HTML, RTF. Každý z formátov je špecifický a podporuje konverziu do čistého textu. Čistý text môžu v neskorších etapách procesu vyžadovať systémy segmentácia alebo tokenizácie.
+                    </p>
+                </div>
+
+                <div class="col-lg-12">
+                    <h2 class="page-header">Tokenizácia a segmentácia</h2>
+                    <p>Segmentácia je proces prijímania nerozdeliteľného sledu symbolov a jeho “segmentácie“ na kúsky. Napríklad s automatickým vyhľadávaním hraníc viet 
+                        sa zaoberá vetná segmentácia. Slovná segmentácia sa zaoberá nálezom slovných hraníc 
+                        v korpuse (Jurafsky, 2000).V slovnej segmentácie sa text delí na tie najmenšie, elementárne textové jednotky, ktoré sú:
+                    </p>
+                    <ul>
+                        <li>súvislé reťazce alfanumerických znakov, oddelené medzerami alebo znakmi interpunkcie, </li>
+                        <li>jednotlivé znaky interpunkcie.</li></ul>
+                    <p>Napríklad slovná segmentácia časti textu:</p>
+                    <center><p><i>Peter na súťaži dosiahol 1. miesto (získal zlato)</i></p></center>
+                    <center><p>Táto časť textu sa rozdelí na 11 elementárnych textových jednotiek.</p></center>
+                    <center><p><i>[Peter] [na] [súťaži] [dosiahol] [1] [.] [miesto] [(] [získal] [zlato] [)]</i></p></center>
+                    <p>Problém vetného rozdelenia spočíva v nejednoznačnosti bodky „.“, ktorá je symbolom ukončenia vety, ale taktiež môže byť vyznačením skratky. Natural Language Toolkit (NLTK) je vedúca platforma pre budovanie programov pracujúcich s dátami ľudského jazyka. Poskytuje ľahko použiteľné rozhranie. Obsahuje nástroje 
+                        pre segmentáciu slov aj viet. Vetná segmentácia môže byť prevedená cez NLTK Sentence Segmentation. V nasledujúcej tabuľke vidíme, že NLTK vetná segmentácia zvládne aj problém nejednoznačnosti bodky. 
+                    </p>
+                    <center><style type="text/css">
+                            .centerImage
+                            {
+                                text-align:center;
+                                display:block;
+                            }
+                        </style>
+                        <img src="http://i.imgur.com/mVJ4Xcy.jpg?1" class="centerImage" alt=""></center>
+<div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Lematizácia</h2>
+                    <p>Lematizácia je proces prevádzania slov na základné tvary, lemy. Lematizácia prevádza slová, ktoré sa vyskytujú v rôznych morfologických tvaroch na lemy, najčastejšie je to odstránením slovotvorných, pádových a iných predpôn a prípon. Lema je základným tvarom tokenu, čiže je totožný k nemu patriacim lexikálnym výrazom (napr. dobrá → dobrý, situácií → situácia) (Paralič, 2010).
+                    </p>
+                    <p>Špeciálnou formou lematizácie je izolácia koreňa slova (angl. stemming), 
+pri ktorej sa označkované slovo na danej pozícii nahrádza svojím kmeňovým základom, čiže sa konvertuje na základný tvar. Zo slova (tokenu) sa odstraňujú slovotvorné, pádové a iné predpony a prípony tak, že ostáva iba základ (koreň) slova, ktorý sa identifikuje ako term (t.j. kľúčové slovo).
+Ako vidíme lematizácia úzko súvisí so stemmingom. Rozdielom medzi lematizáciou a stemmingom je to, že stemmer pracuje na slovách bez znalosti kontextu. Stemmer nedokáže rozlišovať slová, ktorých význam je závislí na kontexte, čiže lematizér vykonáva aj morfologickú analýzu slov. Napr. anglické slovo „meeting“ môže znamenať schôdzku alebo stretnutie, význam takého slova je určený kontextom. Napríklad slovo „lepšie“ má lemu „dobrý“, spojitosť medzi nimi stemming nedokáže rozoznať bez lexikálnych vedomostí. Výhodou stemmera je jeho rýchlosť a jednoduchšia implementácia, znížená presnosť nemusí záležať pre niektoré aplikácie. 
+                    </p><p>Slovenskou lematizáciou sa zaoberá SNK (Slovenský národný korpus). Pri lematizácii slovenčiny pre tokeny patriacich do ohybných slovných tried má lema 
+v zásade tieto hodnoty morfologických kategórií:
+</p> <ul>
+                        <li>Substantíva, zámená, číslovky: príslušný rod, singulár, nominatív(„domom“ = „dom“),</li>
+                        <li>Adjektíva, adjektiváliá: maskulínum, singulár, nominatív, pozitív („peknej“ = „pekný“),</li>
+                        <li>Slovesá: infinitív(„stretnem“ = „stretnúť“).</li>
+</ul>
+                </div>
+                    <hr>
+
+
+                    <!-- Footer -->
+                    <footer>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>Copyright &copy; Natural Language Processing 2016</p>
+                            </div>
+                        </div>
+                    </footer>
+
+
+                    <!-- /.container -->
+
+                    <!-- jQuery -->
+                    <script src="js/jquery.js"></script>
+
+                    <!-- Bootstrap Core JavaScript -->
+                    <script src="js/bootstrap.min.js"></script>
+
+
+
+                    </html>
+
