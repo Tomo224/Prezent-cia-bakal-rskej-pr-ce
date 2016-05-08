@@ -153,44 +153,77 @@
                             }
                         </style>
                         <img src="http://i.imgur.com/mVJ4Xcy.jpg?1" class="centerImage" alt=""></center>
-<div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header">Lematizácia</h2>
-                    <p>Lematizácia je proces prevádzania slov na základné tvary, lemy. Lematizácia prevádza slová, ktoré sa vyskytujú v rôznych morfologických tvaroch na lemy, najčastejšie je to odstránením slovotvorných, pádových a iných predpôn a prípon. Lema je základným tvarom tokenu, čiže je totožný k nemu patriacim lexikálnym výrazom (napr. dobrá → dobrý, situácií → situácia) (Paralič, 2010).
-                    </p>
-                    <p>Špeciálnou formou lematizácie je izolácia koreňa slova (angl. stemming), 
-pri ktorej sa označkované slovo na danej pozícii nahrádza svojím kmeňovým základom, čiže sa konvertuje na základný tvar. Zo slova (tokenu) sa odstraňujú slovotvorné, pádové a iné predpony a prípony tak, že ostáva iba základ (koreň) slova, ktorý sa identifikuje ako term (t.j. kľúčové slovo).
-Ako vidíme lematizácia úzko súvisí so stemmingom. Rozdielom medzi lematizáciou a stemmingom je to, že stemmer pracuje na slovách bez znalosti kontextu. Stemmer nedokáže rozlišovať slová, ktorých význam je závislí na kontexte, čiže lematizér vykonáva aj morfologickú analýzu slov. Napr. anglické slovo „meeting“ môže znamenať schôdzku alebo stretnutie, význam takého slova je určený kontextom. Napríklad slovo „lepšie“ má lemu „dobrý“, spojitosť medzi nimi stemming nedokáže rozoznať bez lexikálnych vedomostí. Výhodou stemmera je jeho rýchlosť a jednoduchšia implementácia, znížená presnosť nemusí záležať pre niektoré aplikácie. 
-                    </p><p>Slovenskou lematizáciou sa zaoberá SNK (Slovenský národný korpus). Pri lematizácii slovenčiny pre tokeny patriacich do ohybných slovných tried má lema 
-v zásade tieto hodnoty morfologických kategórií:
-</p> <ul>
-                        <li>Substantíva, zámená, číslovky: príslušný rod, singulár, nominatív(„domom“ = „dom“),</li>
-                        <li>Adjektíva, adjektiváliá: maskulínum, singulár, nominatív, pozitív („peknej“ = „pekný“),</li>
-                        <li>Slovesá: infinitív(„stretnem“ = „stretnúť“).</li>
-</ul>
-                </div>
-                    <hr>
-
-
-                    <!-- Footer -->
-                    <footer>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 class="page-header">Lematizácia</h2>
+                            <p>Lematizácia je proces prevádzania slov na základné tvary, lemy. Lematizácia prevádza slová, ktoré sa vyskytujú v rôznych morfologických tvaroch na lemy, najčastejšie je to odstránením slovotvorných, pádových a iných predpôn a prípon. Lema je základným tvarom tokenu, čiže je totožný k nemu patriacim lexikálnym výrazom (napr. dobrá → dobrý, situácií → situácia) (Paralič, 2010).
+                            </p>
+                            <p>Špeciálnou formou lematizácie je izolácia koreňa slova (angl. stemming), 
+                                pri ktorej sa označkované slovo na danej pozícii nahrádza svojím kmeňovým základom, čiže sa konvertuje na základný tvar. Zo slova (tokenu) sa odstraňujú slovotvorné, pádové a iné predpony a prípony tak, že ostáva iba základ (koreň) slova, ktorý sa identifikuje ako term (t.j. kľúčové slovo).
+                                Ako vidíme lematizácia úzko súvisí so stemmingom. Rozdielom medzi lematizáciou a stemmingom je to, že stemmer pracuje na slovách bez znalosti kontextu. Stemmer nedokáže rozlišovať slová, ktorých význam je závislí na kontexte, čiže lematizér vykonáva aj morfologickú analýzu slov. Napr. anglické slovo „meeting“ môže znamenať schôdzku alebo stretnutie, význam takého slova je určený kontextom. Napríklad slovo „lepšie“ má lemu „dobrý“, spojitosť medzi nimi stemming nedokáže rozoznať bez lexikálnych vedomostí. Výhodou stemmera je jeho rýchlosť a jednoduchšia implementácia, znížená presnosť nemusí záležať pre niektoré aplikácie. 
+                            </p><p>Slovenskou lematizáciou sa zaoberá SNK (Slovenský národný korpus). Pri lematizácii slovenčiny pre tokeny patriacich do ohybných slovných tried má lema 
+                                v zásade tieto hodnoty morfologických kategórií:
+                            </p> <ul>
+                                <li>Substantíva, zámená, číslovky: príslušný rod, singulár, nominatív(„domom“ = „dom“),</li>
+                                <li>Adjektíva, adjektiváliá: maskulínum, singulár, nominatív, pozitív („peknej“ = „pekný“),</li>
+                                <li>Slovesá: infinitív(„stretnem“ = „stretnúť“).</li>
+                            </ul>
+                        </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <p>Copyright &copy; Natural Language Processing 2016</p>
+                                <h2 class="page-header">Morfologické značkovanie</h2>
+                                <p>Morfologická analýza vstupuje do spracovania textu v okamžiku, keď 
+                                    vo vstupnom texte sú identifikované slová, medzery, interpunkčné znamienka, a v niektorých prípadoch aj začiatky a konce viet. Pre morfologické značkovanie je potrebný tagset, tager, morfologický slovník, trénovací korpus a testovacie dáta.
+                                    Morfologické značkovanie (Part–of-Speech tagging, POS tagging) ohodnocuje slová príslušnými morfologickými kategóriami na základe ktorých sa tokenom priraďujú gramatické značky – tagy. Tieto morfologické značky nám určujú slovný druh. rod, číslo, pád atď. Značkovanie je praktické, jeho výsledky sú použiteľné 
+                                    vo viacerých smeroch. Je to finálny krok pre značkovanie korpusu pre lexikografické účely a taktiež výrazne zrýchľuje syntaktickú analýzu. Aj niektoré aplikácie môžu využiť POS tagging ako vyhľadávače v elektronických slovníkoch, pre vyhľadávanie informácií všeobecne (Information retrieval) a dokonca aj pre strojový preklad 
+                                    pre blízke flektívne jazyky (Benko, 2001). Väčšina značkovacích algoritmov spadá 
+                                    do jednej z dvoch tried: 
+                                </p>
+                                <ul>
+                                    <li>značkovacie jazyky založené na pravidlách (Rule-based tagger),</li>
+                                    <li>stochastické značkovače.</li>
+                                </ul>
+                                <p>Značkovače založené na pravidlách zahŕňa veľkú databázu ručne písaných pravidiel dezambiguácie. Stochastické značkovače riešia nejasnosti značkovania pomocou trénovacích korpusov pre výpočet pravdepodobnosti toho, či k danému slovu patrí daný tag v danom kontexte. Trénovací korpus je zbierka textov , ktoré obsahujú ručne overené jazykové informácie (označkovaný a dezambiguovaný), ktoré sú spájané s originálnym textom (Jayaweera, 2014). 
+                                    Tag je súbor jednomiestnych znakov jednotlivých formálnych kategórií 
+                                    pre jednu lemu alebo token. Kategórie sa značia písmenom latinskej abecedy, číslicou, matematickým symbolom. Počet znakov je variabilný, ale ich poradie v tagu je záväzné. Formu označenia určuje skupina znakov, tagset.  Pre slovenčinu bol vyvinutí tagset 
+                                    v JÚĽŠ v Bratislave, ako súčasť projektu Slovenského národného korpusu (SNK). 
+                                    V morfologickom tagsete SNK sa množina slovných foriem používaných v slovenčine rozdeľuje do 19 tried, z ktorých 10 v zásade zodpovedá tradične vydeľovaným slovným druhom a 9 obsahuje rôzne špecifické jazykové prvky (Paralič, 2010). Podrobnejší popis tagsetu nájdeme na webovej stránke Slovenského národného korpusu (SNK).
+                                </p><center><p><i>Tagset pre slovenský jazyk</i></p></center>
+                                <center><img src="http://i.imgur.com/v2X0pLy.png" class="centerImage" alt="Slovenský tagset"></center>
                             </div>
-                        </div>
-                    </footer>
+                            <div class="col-lg-12">
+                                <h2 class="page-header">Syntaktická analýza</h2>
+                                <p>Úlohou syntaktickej analýzy je rozpoznať, či vstupní textový reťazec je vetou 
+                                    v danom (prirodzenom) jazyku. V kladnom prípade je výsledkom analýzy syntaktická štruktúra vety, napríklad v podobe derivačného stromu. Cieľom syntaktickej analýzy 
+                                    je, aby počítač „porozumel“ gramatike prirodzeného jazyka. Toho sa môže využiť napr. 
+                                    pri vývoji syntaktického korektoru na opravu interpunkcií, pri dialógových systémoch 
+                                    pre komunikáciu v prirodzenom jazyku alebo ako jeden z nástrojov pre realizáciu strojového prekladu. Analýza syntaktickej úrovne sa rieši štatistickými metódami a použitím korpusu už zaznamenaných viet. Výsledkom syntaktickej analýzy 
+                                    je reprezentácia viet vo forme závislostného (syntaktického) stromu (Fakulta informatiky Masarykovy univerzity).
+
+                                </p><p>Počas analýzy identifikujeme vetné členy, ich skladbu do syntagiem (fráz) a priraďujeme k nim roly (podmet, prísudok, predmet, prívlastok...). Výsledný syntaktický strom nám vyjadruje vzťahy medzi syntagmami vo vete. Syntaktické stromy sa vytvárajú pomocou prepisovacích pravidiel. Tieto pravidlá určujú vzťahy medzi syntagmami, označujú sa neterminálnymi symbolmi a sú písané malým písmom. Terminálne symboly sú konkrétne slová a sú písané veľkým písmom. </p>
+                            </div>
+                            <hr>
 
 
-                    <!-- /.container -->
+                            <!-- Footer -->
+                            <footer>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p></p> <p>Copyright &copy; Natural Language Processing 2016</p>
+                                    </div>
+                                </div>
+                            </footer>
 
-                    <!-- jQuery -->
-                    <script src="js/jquery.js"></script>
 
-                    <!-- Bootstrap Core JavaScript -->
-                    <script src="js/bootstrap.min.js"></script>
+                            <!-- /.container -->
+
+                            <!-- jQuery -->
+                            <script src="js/jquery.js"></script>
+
+                            <!-- Bootstrap Core JavaScript -->
+                            <script src="js/bootstrap.min.js"></script>
 
 
 
-                    </html>
+                            </html>
 
