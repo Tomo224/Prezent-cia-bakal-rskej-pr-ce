@@ -41,6 +41,12 @@ header.carousel .fill {
     background-position: center;
     background-size: cover;
 }
+header.carousel .fill2 {
+    width: content-box;
+    height: content-box;
+    background-position: center;
+    background-size: cover;
+}
 
 /* 404 Page Styles */
 
